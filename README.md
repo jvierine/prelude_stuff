@@ -1,4 +1,4 @@
-# Prelude_stuff
+# Prelude Stuff
 
 Simple code to evaluate plasma frequency measured by satellite. 
 
