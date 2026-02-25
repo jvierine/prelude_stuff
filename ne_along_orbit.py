@@ -20,7 +20,9 @@ def plot_orbit(altitude=450, n_orbits=5, epoch = datetime(2006, 2, 25, 0, 0, 0))
     # only historical dates with iri2016, as it relies on a table of solar radio flux and geomagnetic activity index.
     # look into using pyiri with a user defined f10.7 cm radio flux and ap index to manually explore different solar activity levels.
     # I haven't figured out how to feed f10.7 and ap to iri2016.
-    
+
+   # look into using PyIRI, it seems like a better option: https://github.com/victoriyaforsythe/PyIRI
+   
     mu = 398600.4418        # km^3/s^2
     Re = 6378.137           # km
 
