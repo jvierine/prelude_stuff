@@ -140,9 +140,13 @@ def plot_orbit(altitude=450, n_orbits=5, epoch = datetime(2006, 2, 25, 0, 0, 0))
     plt.gcf().autofmt_xdate()  # rotate labels
     plt.title(f"Plasma frequency along orbit ({date_str})")
     plt.tight_layout()
-    plt.show()
+    plt.savefig("pf-%d.png"%(altitude),dpi=100)
+    plt.close()
+#    plt.show()
 
-
+print("450 km")
 plot_orbit(altitude=450, n_orbits=5, epoch = datetime(2020, 2, 25, 0, 0, 0))
+print("550 km")
 plot_orbit(altitude=550, n_orbits=5, epoch = datetime(2020, 2, 25, 0, 0, 0))
+print("650 km")
 plot_orbit(altitude=650, n_orbits=5, epoch = datetime(2020, 2, 25, 0, 0, 0))
